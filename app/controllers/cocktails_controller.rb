@@ -20,6 +20,7 @@ class CocktailsController < ApplicationController
     else
       render 'new'
     end
+  end
 
   def edit
     @cocktails = Cocktail.find(params[:id])
